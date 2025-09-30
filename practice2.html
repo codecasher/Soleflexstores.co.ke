@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Style Smooth Scroll</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #111;
+      color: white;
+    }
+
+    .row-container {
+      position: relative;
+      overflow: hidden;
+      padding: 20px 40px;
+    }
+
+    .product-row {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      scrollbar-width: none; /* Hide scrollbar Firefox */
+    }
+    .product-row::-webkit-scrollbar {
+      display: none; /* Hide scrollbar Chrome */
+    }
+
+    .product {
+      flex: 0 0 auto;
+      width: 180px;
+      height: 250px;
+      background: #444;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      transition: transform 0.3s;
+    }
+    .product:hover {
+      transform: scale(1.1);
+      background: #666;
+    }
+
+    /* Arrows */
+    .scroll-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      border: none;
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 50%;
+      opacity: 0;
+      transition: opacity 0.3s;
+      z-index: 10;
+    }
+    .row-container:hover .scroll-btn {
+      opacity: 1;
+    }
+
+    .scroll-left {
+      left: 5px;
+    }
+    .scroll-right {
+      right: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="row-container">
+    <button class="scroll-btn scroll-left">‹</button>
+    <div class="product-row" id="productRow">
+      <div class="product">1</div>
+      <div class="product">2</div>
+      <div class="product">3</div>
+      <div class="product">4</div>
+      <div class="product">5</div>
+      <div class="product">6</div>
+      <div class="product">7</div>
+      <div class="product">8</div>
+      <div class="product">9</div>
+      <div class="product">10</div>
+    </div>
+    <button class="scroll-btn scroll-right">›</button>
+  </div>
+
+  <script>
+    const row = document.getElementById("productRow");
+    const leftBtn = document.querySelector(".scroll-left");
+    const rightBtn = document.querySelector(".scroll-right");
+
+    function smoothScroll(container, change) {
+      let start = container.scrollLeft;
+      let end = start + change;
+      let duration = 600; // milliseconds
+      let startTime = null;
+
+      function animateScroll(timestamp) {
+        if (!startTime) startTime = timestamp;
+        let progress = Math.min((timestamp - startTime) / duration, 1);
+        container.scrollLeft = start + (end - start) * easeInOutQuad(progress);
+        if (progress < 1) requestAnimationFrame(animateScroll);
+      }
+
+      // easing function
+      function easeInOutQuad(t) {
+        return t < 0.5 ? 2*t*t : -1+(4-2*t)*t;
+      }
+
+      requestAnimationFrame(animateScroll);
+    }
+
+    rightBtn.addEventListener("click", () => {
+      smoothScroll(row, row.clientWidth); // scroll right by one full row
+    });
+
+    leftBtn.addEventListener("click", () => {
+      smoothScroll(row, -row.clientWidth); // scroll left
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        .navigation {
+         display: flex;
+         justify-content: space-between;
+         margin-top: 2em;
+         align-items: center;
+       }
+       .navigation ul {
+        display: flex;
+         gap: 2em;
+         margin-right: 2em;
+         max-width: 50%;
+       }
+       .logo {
+         max-width: 25%;
+         margin-left: 3em;
+       }
+    
+        .container {
+            display: flex;
+            max-width: 100%;
+            gap: 5em;
+            flex-wrap: nowrap;
+            margin-top: 1em;
+            margin-left: 2em;
+        }
+        .container .item1 {
+            height: 600px;
+            width: 500px;
+        }
+        .container .item2 {
+            height: 600px;
+            width: 300px;
+        }
+        .container .item3 {
+            height: 520px;
+            width: 250px;
+            border: solid blue;
+            border-radius: 5px;
+            padding: 0px 0px 10px 10px;
+            
+        }
+        .item3 h5 {
+            margin: 0;
+        }
+        .item3 h5,h4 {
+            color: rgba(16, 118, 202, 0.877);
+        }
+         .item-container{
+        margin-left: 3em;
+        margin-top: 2em;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 2em;
+       }
+       .size-container .btn {
+        margin-top: 1em;
+        margin-left: 10px;
+       }
+       .btn:hover {
+        background-color: rgba(11, 165, 236, 0.726);
+        border-radius: 5px;
+       }
+       .item-container .item-about {
+        max-width: 50%;
+       }
+       .item-container .paragraph {
+        max-width: 50%;
+       }
+       .other-related-items div {
+        margin-left: 5em;
+       }
+       .other-related-items img {
+        object-fit: cover;
+       }
+       .other-related-items {
+        display: flex;
+        margin-top: 2em;
+        margin-left: 3em;
+        margin-bottom: 5em;
+       }
+       .sale-item {
+         background-color: whitesmoke;
+         box-shadow: 0 0 20px 2px rgb(0, 0, 0 ,0.1);
+         transition: 1s;
+      }
+       .sale-item:hover {
+         transform: scale(1.1);
+         z-index: 1;
+         color: blue;
+       }
+       p b {
+        color: rgba(16, 118, 202, 0.877);
+       }
+       h3 {
+        font-size: bold;
+        font-weight: 60px;
+        color: rgba(16, 118, 202, 0.877);
+       }
+       .Bdesign {
+        
+        padding: 12px 5px 12px 5px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        transition: 0.5s;
+       }
+       .Bdesign:hover {
+        transform: scale(1.1);
+         z-index: 1;
+         cursor: pointer;
+       }
+       .btn1 {
+        background-color: rgba(12, 129, 175, 0.945);
+       }
+       .btn2 {
+        background-color: rgb(22, 167, 22)
+       }
+       .btn3 {
+         background-color: rgba(12, 129, 175, 0.945);
+       }
+       .btn4 {
+        background-color: white;
+        color: black;
+        border: black solid;
+       }
+       .fa-whatsapp .fa-heart {
+        padding-left: 5px;
+       }
+       .fa-star  {
+        font-size: 10px;
+        color: rgb(243, 187, 5);
+       }
+       .fa-star-half{
+         font-size: 10px;
+        color: rgb(243, 187, 5);
+       }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+    <div class="logo">soleflex</div>
+     <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Help</a></li>
+     </ul>
+    </div>
+    <div class="container">
+        <div class="item1">
+            <img src="images/covernew2.png" alt="shoe.img" width="500px" height="500px" style="border-radius: 5px;">
+          <div class="size-container">
+            <button class="btn">37</button>
+            <button class="btn">38</button>
+            <button class="btn">39</button>
+            <button class="btn">40</button>
+            <button class="btn">41</button>
+            <button class="btn">42</button>
+            <button class="btn">43</button>
+            <button class="btn">44</button>
+            <button class="btn">45</button>
+            </div>
+        </div>
+        <div class="item2">
+            <h3>Vans Old Skool Stack Form</h3>
+          <p>Ksh 6999/=</p>
+          <br>
+          <p><b>Availability:</b> in stock</p>
+          <p><b>Category:</b> unisex</p>
+          <p><b>Size-range:</b>US 37-42</p>
+          <p><b>Use:</b> casual,gym</p>
+          <div class="buttons"> 
+            <p class="Bdesign btn1">Buy Now!</p>
+            <p class="Bdesign btn2"><i class="fa-brands fa-whatsapp"></i>&nbsp;&nbsp;Order via WhatsApp</p>
+
+            <p class="Bdesign btn3">Add to cart!</p>
+            <p class="Bdesign btn4"> <i class="fa-solid fa-heart"></i>&nbsp;&nbsp;&nbsp;favorites</p>
+
+             </div>
+        </div>
+        <div class="item3">
+            <h4>Customer reviews:</h4>
+            <h5>Derrick G maina</h5>
+            <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i> 
+                    <i class="fa-solid fa-star"></i> 
+            <p>This product is quite legit, good assuarance from supplier to consumer. Quick delivery as well!</p>
+            <br>
+            <h5>Charity Ngina</h5>
+            <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i> 
+                    <i class="fa-solid fa-star"></i> 
+            <p>I like how fast the delivery is. The product came in good condition just as described in the site!</p>
+            <br>
+            <h5>Louis Maina</h5>
+            <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i> 
+                    <i class="fa-solid fa-star"></i> 
+            <p>already rocking the new kicks! WOW!</p>
+            <p style="margin-bottom: 0px;"><h4>Shop info:</h4> Alexander's unique shoe shop</p>
+            <p><b>contact:</b>0712345678</p>
+        </div>
+        </div>
+
+        <h3 style=" margin-left: 7em; margin-top: 5em;">Other related items.</h3>
+    <div class="other-related-items">
+        <div class="sale-item">
+          <img src="images/itemphoto1.jpg" alt="item-other-one" width="200px" height="250px" >
+          <h4>Slip-on canvas</h4>
+                <p class="price">ksh 3459/=</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i> 
+                    <i class="fa-solid fa-star"></i> 
+        </div>
+        <div class="sale-item"><img src="images/photo 10.jpg" alt="item-other-two" width="200px" height="250px">
+          <h4>canvas pro black & white</h4>
+                <p class="price">ksh 4899/=</p>
+                <i class="fa-solid fa-star"></i> 
+                <i class="fa-solid fa-star"></i> 
+                <i class="fa-solid fa-star"></i> 
+                <i class="fa-solid fa-star"></i> 
+                <i class="fa-solid fa-star"></i> 
+        </div>
+        <div class="sale-item"><img src="images/photo 7.jpg" alt="item-other-three" width="200px" height="250px">
+          <h4>Pink designed sneakers</h4>
+                <p class="price">ksh 5455/=</p>
+                <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i> 
+                <i class="fa-solid fa-star-half"></i>
+        </div>
+        <div class="sale-item"><img src="images/photo 9.jpg" alt="item-other-four" width="200px" height="250px">
+          <h4>Pink designed sneakers</h4>
+                <p class="price">ksh 5455/=</p>
+                <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i> 
+                <i class="fa-solid fa-star-half"></i>
+        </div>
+    </div>
+</body>
+</html>

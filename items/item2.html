@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+<meta property="og:title" content="Lenovo X1 Yoga – Intel Core i5-11, 16GB RAM, 256GB SSD">
+<meta property="og:description" content="Versatile 2-in-1 laptop with 14-inch Full HD display. Price: KSh 47,500.00">
+<meta property="og:image" content="https://yourdomain.com/products/lenovo-x1-yoga.jpg">
+<meta property="og:url" content="https://yourdomain.com/shop/lenovo-x1-yoga">
+<meta property="og:type" content="product">
+<meta property="og:site_name" content="Convenience Store">
+-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../styles/style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=sans+serif+One&family=Life+Savers:wght@400;700;800&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="navigation">
+    <a href="../index.html" style="text-decoration: none;"><div class="logo">soleflex</div></a>
+    <div class="icons">
+    <div class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="item-count"></span>
+    </div>
+    <div class="fav-icon">
+        <i class="fa-solid fa-heart fav-icon"></i>
+        <span class="item-Count"></span>
+    </div>
+    <div class="ordered-icon">
+                <i class="fa-solid fa-box-check"></i>
+                <span class="ordered-count-badge">0</span>
+            </div>
+    </div>
+    </div>
+    <div class="cart">
+        <h2 class="cart-title">Your cart</h2>
+        <div class="cart-content">
+             <!-- <div class="cart-box">
+                <img src="images/covernew2.png" alt="cart-img">
+             <div class="cart-detail">
+                <h2 class="cart-product-title">Vans Old Skool Stack Form</h2>
+                <span class="cart-price">Ksh 6999/=</span>
+                <div class="cart-quantity">
+                    <button id="decrement">-</button>
+                    <span class="number">1</span>
+                    <button id="increment">+</button>
+                </div> 
+            </div> 
+            <i class="fa-solid fa-trash"></i>
+        </div> -->
+    </div>
+    <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">ksh 0</div>
+    </div>
+    <div class="favorites">
+        <h2 class="favorites-title">Your Favorites</h2>
+        <div class="favorites-content">
+            </div>
+        <i class="fa-solid fa-xmark" id="favorites-close"></i>
+    </div>
+    <div class="ordered-sidebar">
+        <h2 class="ordered-title">Ordered Items</h2>
+        <i class="fa-solid fa-xmark" id="ordered-close"></i>
+        <div class="ordered-content"></div>
+    </div>
+    <a 
+      class="whatsapp-btn"
+      data-product ="black & white Addidas Yeezy"
+      data-price ="3500"
+      data-phone ="254791488487"
+      data-img =""
+      data-url ="#"
+      target="_blank"
+    >
+    <button class="btn-buy">Buy now</button>
+    </a>
+    <i class="fa-solid fa-xmark" id="cart-close"></i>
+    </div>
+    <div class="product-box">
+        <div class="item1">
+             <img src="../images/photo 6.jpg" alt="shoe.img" width="530px" height="532px" style="border-radius: 5px; object-fit: cover;">
+          <div class="size-container">
+            <button class="btn">37</button>
+            <button class="btn">38</button>
+            <button class="btn">39</button>
+            <button class="btn">40</button>
+            <button class="btn">41</button>
+            <button class="btn">42</button>
+            <button class="btn">43</button>
+            <button class="btn">44</button>
+            <button class="btn">45</button>
+            </div>
+        </div>
+        <div class="item2">
+            <h3>Black & white Addidas Yeezy</h3>
+          <p>Ksh 3500/=</p>
+          <br>
+          <p><b>Availability:</b> in stock</p>
+          <p><b>Category:</b> unisex</p>
+          <p><b>Size-range:</b>US 37-42</p>
+          <p><b>Use:</b> casual</p>
+          <div class="buttons"> 
+          <a 
+             class="whatsapp-btn"
+             data-product ="Black & white Addidas Yeezy"
+             data-price ="3500"
+             data-phone ="254791488487"
+             data-img =""
+             data-url ="#"
+             target="_blank"
+            >
+            <p class="Bdesign btn1">Buy Now!</p>
+            
+            <p class="Bdesign btn2"><i class="fa-brands fa-whatsapp"></i>&nbsp;&nbsp;Order via WhatsApp</p>
+            </a>
+            <p class="Bdesign add-to-cart" 
+            data-name="Black & white Addidas Yeezy" 
+            data-price="3500/=" 
+            data-img="../images/photo 6.jpg">
+            Add to cart!
+            </p>
+             <p class="Bdesign add-to-favourites"
+               data-name="Black $ white Addidas Yeezy" 
+               data-price="3500/=" 
+               data-img="../images/photo 6.jpg"
+            ><i id="Icon" class="fa-regular fa-heart"></i>&nbsp;&nbsp;&nbsp;<span id="favText">favorites</span></p>  
+             </div> 
+             
+        </div>
+        <div class="item3">
+            <h4>Customer reviews:</h4>
+            <h5>Kevin Mutiso</h5>
+            <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i> 
+                    <i class="fa-solid fa-star"></i> 
+            <p>This product is quite legit, good assuarance from supplier to consumer. Quick delivery as well!</p>
+            <br>
+            <h5>Charity Ngina</h5>
+            <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i> 
+                    <i class="fa-solid fa-star"></i> 
+            <p>“Stylish sneakers that match almost all my outfits. I wore them to school and everyone kept asking me where I bought them.”</p>
+            <br>
+            <h5>Shaddrack Maina</h5>
+            <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i> 
+                    <i class="fa-solid fa-star"></i> 
+            <p>“Honestly, these are the best sneakers I’ve bought online. Fit perfectly and the delivery to Nakuru was very fast.”</p>
+            <p style="margin-bottom: 0px;"><h4>Shop info:</h4> Alexander's unique shoe shop</p>
+            <p><b>contact:</b>0712345678</p>
+        </div>
+        </div>
+        <h3 style=" margin-left: 7em; margin-top: 5em;">Other related items.</h3>
+    <div class="other-related-items">
+       <div class="sale-item">
+        <a href="item9.html">
+          <img src="../images/photo 12.jpg" alt="" width="200px" height="250px" >
+          <h4>Yellow addidas Teezy</h4>
+        </a>
+        <p class="price">ksh 4500/=</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+        <div class="sale-item">
+        <a href="item16.html">
+          <img src="../images/photocover 1.jpg" alt="" width="200px" height="250px">
+          <h4>Air jordan | High 6</h4>
+        </a>
+        <p class="price"> ksh 6999/=</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half"></i>
+      </div>
+         <div class="sale-item" >
+        <a href="item5.html">
+          <img src="../images/photo 9.jpg" alt=""  width="200px" height="250px">
+          <h4>Addidas grey running shoe</h4>
+          <p class="price">ksh 6245/=</p>
+        </a>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half"></i>
+      </div>
+        <div class="sale-item">
+        <a href="item10.html">
+          <img src="../images/jordan 1.jpg" alt="" width="200px" height="250px">
+          <h4>Nike Airmax flux</h4>
+        </a>
+        <p class="price">ksh 4999/=</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half"></i>
+      </div>
+    </div>
+    <hr style="margin-top: 10em;">
+    <div class="footer">
+        <i class="fa-regular fa-copyright"></i>2025 Soleflex Stores. All Rights Reserved. Built by Derrick.G.Maina. <br>
+        TEL: 0798702143
+    </div>
+    <script src="../script.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        let cart = [];
+
+        const saveCart = () => {
+            localStorage.setItem('cartItems', JSON.stringify(cart));
+        };
+
+        const loadCart = () => {
+            const storedCart = localStorage.getItem('cartItems');
+            if (storedCart) {
+                cart = JSON.parse(storedCart);
+                console.log("Cart loaded:", cart);
+            }
+        };
+
+        loadCart();
+
+        // Handle Add to Cart
+        document.querySelectorAll(".add-to-cart").forEach(button => {
+            button.addEventListener("click", () => {
+                const product = button.dataset.name;
+                const price = button.dataset.price;
+                const img = button.dataset.img;
+                const phone = button.dataset.phone || "254791488487";
+                const url = window.location.href;
+
+                // Check if the item already exists in the cart to increment quantity
+                const existingItem = cart.find(item => item.product === product && item.phone === phone);
+                if (existingItem) {
+                    existingItem.quantity = (existingItem.quantity || 1) + 1;
+                } else {
+                    cart.push({ product, price, img, phone, url, quantity: 1 });
+                }
+
+                saveCart();
+
+                console.log("Cart:", cart);
+                alert(`${product} added to cart!`);
+            });
+        });
+
+        // Handle Buy Now to send a single consolidated message per seller
+        document.querySelector(".btn-buy").addEventListener("click", (e) => {
+            e.preventDefault();
+
+            if (cart.length === 0) {
+                alert("Your cart is empty!");
+                return;
+            }
+
+            // Group items by seller phone
+            const sellers = {};
+            cart.forEach(item => {
+                if (!sellers[item.phone]) sellers[item.phone] = [];
+                sellers[item.phone].push(item);
+            });
+
+            // Loop each seller and open a single WhatsApp chat with a consolidated message
+            for (const phone in sellers) {
+                const items = sellers[phone];
+
+                let message = "Hi, I am interested in the following items:\n\n";
+
+                items.forEach((item, i) => {
+                    const quantityText = item.quantity > 1 ? ` (x${item.quantity})` : '';
+                    message += `*${i + 1}. Product*: ${item.product}${quantityText}\n`;
+                    message += `*Price*: ${item.price}\n`;
+                    message += `*URL*: ${item.url}\n`;
+                    if (item.img) message += `${item.img}\n`;
+                    message += `\n`;
+                });
+
+                message += "Thank you!";
+
+                const encodedMessage = encodeURIComponent(message);
+                const whatsappUrl = `https://wa.me/${phone}?text=${encodedMessage}`;
+                window.open(whatsappUrl, "_blank");
+            }
+            
+            // Optional: Clear the cart after the user clicks "Buy Now"
+            cart = [];
+            saveCart();
+        });
+
+        // This part of the code is unchanged
+        const whatsappButtons = document.querySelectorAll(".whatsapp-btn");
+        whatsappButtons.forEach(button => {
+            const phone = button.getAttribute("data-phone");
+            const product = button.getAttribute("data-product");
+            const price = button.getAttribute("data-price");
+            const img = button.getAttribute("data-img");
+            const url = button.getAttribute("data-url");
+
+            const message = `${img}
+            Hi, l am interested in:
+            *Product*: ${product}
+            *Price*: ${price}
+            *URL*: ${url}
+            Thank you!`;
+
+            const encodedMessage = encodeURIComponent(message);
+            button.href = `https://wa.me/${phone}?text=${encodedMessage}`;
+        });
+    });
+</script>
+
+</body>
+</html>

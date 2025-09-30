@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Site-wide Open Graph -->
+    <meta property="og:title" content="Convenience Store – Shop Quality Electronics & Accessories">
+    <meta property="og:description" content="Affordable laptops, phones, and accessories delivered across Kenya.">
+    <meta property="og:image" content="https://yourdomain.com/images/store-logo.jpg">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Soleflex">
+    <link rel="stylesheet" href="styles/style1.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=sans+serif+One&family=Life+Savers:wght@400;700;800&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+   <div class="nav">
+  <div class="logo">
+    <h3>Soleflex</h3>
+  </div>
+
+  <div class="search-hamburger">
+    <div class="searchBar">
+      <input type="text" id="searchInput" placeholder="Search for products..." list="Listproducts">
+      <datalist id="Listproducts">
+        <option value="Pink designed sneakers">
+        <option value="black & white Addidas Yeezy">
+        <option value="Canvas pro black & white">
+        <option value="Jordan's size">
+        <option value="Addidas grey running shoe">
+        <option value="Grey sneakers">
+        <option value="Slip-on canvas">
+        <option value="Yellow addidas Teezy">
+        <option value="Nike Airmax flux">
+        <option value="Nike air Jordan Sneakers limited edition">
+        <option value="Vans Old skool stack form">
+        <option value="Nike Jordans black">
+        <option value="limited edition Nike Jordan 6 rings">
+        <option value="Air Jordan | High 6">
+      </datalist>
+      <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <div class="cart-icon">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span class="item-count"></span>
+    </div>
+    <div class="cart">
+      <h2 class="cart-title">Your cart</h2>
+      <div class="cart-content"></div>
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">ksh 0</div>
+      </div>
+      <button class="btn-buy">Buy now</button>
+      <i class="fa-solid fa-xmark" id="cart-close"></i>
+    </div>
+  </ul>
+</div>
+</div>
+
+    <div class="page_one">
+        <div class="mygrid">
+             <div class="grid-item item-one">
+                 <div class="wrapper" id="slider-one">
+                    <img src="images/covernew2.png" alt="Slide 1" />
+                    <img src="images/cover photo 2.jpg" alt="Slide 2" />
+                    <img src="images/photo 2.jpg" alt="Slide 3" />
+                 </div>
+             </div>
+
+      <!-- Slideshow in item-two -->
+            <div class="grid-item item-two">
+                 <div class="wrapper" id="slider-two">
+                    <img src="images/itemphoto1.jpg" alt="Slide 1" />
+                    <img src="images/itemphoto3.jpg" alt="Slide 2" />
+                    <img src="images/itemphoto5.jpg" alt="Slide 3" />
+                 </div>
+             </div>
+
+            <div class="grid-item item-three"><img src="images/cover photo 2.jpg" alt="" ></div>
+            <div class="grid-item item-four"><img src="images/photo 4.jpg"  alt="" ></div>  
+        </div>
+    </div>
+
+   <script>
+  function startSlideshow(sliderId, totalSlides, intervalTime) {
+    const slider = document.getElementById(sliderId);
+    let index = 0;
+
+    setInterval(() => {
+      index = (index + 1) % totalSlides;
+      slider.style.transform = `translateX(-${index * 100}%)`;
+    }, intervalTime);
+  }
+
+  // Start each slideshow with a different interval
+  startSlideshow("slider-one", 3, 3000); // 3 seconds
+  startSlideshow("slider-two", 3, 5000); // 5 seconds
+</script>
+         
+    <div class="top-picks">
+        <h2 style="padding-left: 40px; text-align: center; font-weight: bold; margin-bottom: 1em;">Top pick's for you!</h2>
+        <div class="toppicks-grid">
+            <div class="sale-item"><a href="items/item1.html"><img src="images/photo 2.jpg" alt="" height="250px" width="200">
+                <h4>Pink designed sneakers</h4>
+                <p >Ksh 2000/=</p>
+            </a>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+            <div class="sale-item"><a href="items/item2.html"><img src="images/photo 6.jpg" alt=""  height="250px" width="200">
+                <h4>black & white Addidas<br>Yeezy</h4>
+                <p>Ksh 3500/=</p>
+            </a>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                
+              
+            </div>
+            <div class="sale-item"><a href="items/item3.html"><img src="images/photo 7.jpg" alt=""  height="250px" width="200">
+                <h4>Canvas pro black & white</h4>
+                <p>Ksh 3999/=</p>
+            </a>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+
+                
+            </div>
+            <div class="sale-item"><a href="items/item4.html"><img src="images/photo 8.jpg" alt=""  height="250px" width="200">
+                <h4>Jordan's size</h4></a>
+                <p >ksh 2000/=</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>  
+            </div>
+        </div>
+    </div>
+         <!-- First grid -->
+      <div class="shop-number" style=" text-align: left; margin-left: 2em;"><h3>Shop one</h3></div>
+  <div class="scroll-wrapper">
+    <button class="scroll-btn left"><i class="fa-solid fa-arrow-left"></i></button>
+    <div class="sale-grid">
+       <div class="sale-item" style="margin-left: 30px;">
+        <a href="items/item7.html">
+          <img src="images/photo 11.jpg" alt="">
+          <h4>Slip-on canvas</h4>
+        </a>
+        <p class="price">ksh 3459/=</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+
+      <div class="sale-item">
+        <a href="items/item8.html">
+          <img src="images/photo 7.jpg" alt="">
+          <h4>canvas pro black & white</h4>
+        </a>
+        <p class="price">ksh 4899/=</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+
+      <div class="sale-item">
+        <a href="items/item9.html">
+          <img src="images/photo 12.jpg" alt="" >
+          <h4>Yellow addidas Teezy</h4>
+        </a>
+        <p class="price">ksh 4500/=</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+
+      <div class="sale-item">
+        <a href="items/item10.html">
+          <img src="images/jordan 1.jpg" alt="" >
+          <h4>Nike Airmax flux</h4>
+        </a>
+        <p class="price">ksh 4999/=</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half"></i>
+      </div>
+
+      <div class="sale-item">
+        <a href="items/item11.html">
+          <img src="images/photo 2.jpg" alt="" >
+          <h4>Pink designed sneakers</h4>
+        </a>
+        <p class="price">ksh 5455/=</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half"></i>
+      </div>
+
+      <div class="sale-item">
+        <a href="items/item12.html">
+          <img src="images/cover 3.jpg" alt="" >
+          <h4>Nike air jordarn sneakers <br>limited edition</h4>
+        </a>
+        <p class="price">ksh 6000/=</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+
+      <div class="sale-item">
+        <a href="items/item13.html">
+          <img src="images/photo 5.jpg" alt="" >
+          <h4>Vans Old skool stack form</h4>
+        </a>
+        <p class="price">ksh 6999/=</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half"></i>
+      </div>
+
+      <div class="sale-item">
+        <a href="items/item14.html">
+          <img src="images/photo 8.jpg" alt="" >
+          <h4>Nike jordans black</h4>
+        </a>
+        <p class="price">ksh 5999/=</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+    </div>
+    <button class="scroll-btn right"><i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+
+  <!-- Second grid -->
+   <div class="shop-number"><h3 style = "text-align: left; margin-left: 2em;">Shop two</h3></div>
+  <div class="scroll-wrapper">
+    <button class="scroll-btn left"><i class="fa-solid fa-arrow-left"></i></button>
+    <div class="sale-grid">
+       <div class="sale-item" style="margin-left: 30px;"><a href="items/item1.html"><img src="images/photo 2.jpg" alt="" height="250px" width="200">
+                <h4>Pink designed sneakers</h4>
+                <p >Ksh 2000/=</p>
+            </a>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+            <div class="sale-item"><a href="items/item2.html"><img src="images/photo 6.jpg" alt=""  height="250px" width="200">
+                <h4>black & white Addidas<br>Yeezy</h4>
+                <p>Ksh 3500/=</p>
+            </a>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                
+              
+            </div>
+            <div class="sale-item"><a href="items/item3.html"><img src="images/photo 7.jpg" alt=""  height="250px" width="200">
+                <h4>Canvas pro black & white</h4>
+                <p>Ksh 3999/=</p>
+            </a>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+
+                
+            </div>
+            <div class="sale-item"><a href="items/item4.html"><img src="images/photo 8.jpg" alt=""  height="250px" width="200">
+                <h4>Jordan's size</h4></a>
+                <p >ksh 2000/=</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>  
+            </div>
+             <div class="sale-item">
+                <a href="items/item9.html">
+                  <img src="images/photo 12.jpg" alt="" >
+                  <h4>Yellow addidas Teezy</h4>
+                </a>
+                <p class="price">ksh 4500/=</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="sale-item">
+              <a href="items/item11.html">
+                <img src="images/photo 2.jpg" alt="" >
+                <h4>Pink designed sneakers</h4>
+              </a>
+              <p class="price">ksh 5455/=</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </div>
+            <div class="sale-item">
+              <a href="items/item16.html">
+                <img src="images/photocover 1.jpg" alt="" >
+                <h4>Air jordan | High 6</h4>
+              </a>
+              <p class="price"> ksh 6999/=</p>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </div>
+            <div class="sale-item" style="margin-left: 10px;">
+              <a href="items/item5.html">
+                <img src="images/photo 9.jpg" alt="" >
+                <h4>Addidas grey running shoe</h4>
+                <p class="price">ksh 6245/=</p>
+              </a>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+             </div>
+        </div>
+        <button class="scroll-btn right"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </div>
+  <!-- third grid-->
+   <div class="shop-number"><h3 style = "text-align: left; margin-left: 2em;">Shop three</h3></div>
+   <div class="scroll-wrapper">
+    <button class="scroll-btn left"><i class="fa-solid fa-arrow-left"></i></button>
+    <div class="sale-grid">
+      <div class="sale-item" style="margin-left: 30px;">
+        <a href="items/item10.html">
+          <img src="images/jordan 1.jpg" alt="" >
+          <h4>Nike Airmax flux</h4>
+        </a>
+        <p class="price">ksh 4999/=</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half"></i>
+      </div>
+      <div class="sale-item">
+        <a href="items/item7.html">
+          <img src="images/photo 11.jpg" alt="" >
+          <h4>Slip-on canvas</h4>
+        </a>
+        <p class="price">ksh 3459/=</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+      <div class="sale-item"><a href="items/item1.html"><img src="images/photo 2.jpg" alt="" height="250px" width="200">
+                <h4>Pink designed sneakers</h4>
+                <p >Ksh 2000/=</p>
+            </a>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+      <div class="sale-item">
+        <a href="items/item9.html">
+          <img src="images/photo 12.jpg" alt="" >
+          <h4>Yellow addidas Teezy</h4>
+        </a>
+        <p class="price">ksh 4500/=</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+       <div class="sale-item">
+        <a href="items/item13.html">
+          <img src="images/photo 5.jpg" alt="" >
+          <h4>Vans Old skool stack form</h4>
+        </a>
+        <p class="price">ksh 6999/=</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half"></i>
+      </div>
+      <div class="sale-item">
+        <a href="items/item16.html">
+          <img src="images/photocover 1.jpg" alt="" >
+          <h4>Air jordan | High 6</h4>
+        </a>
+        <p class="price"> ksh 6999/=</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half"></i>
+      </div>
+       <div class="sale-item">
+        <a href="items/item12.html">
+          <img src="images/cover 3.jpg" alt="" >
+          <h4>Nike air jordarn sneakers <br>limited edition</h4>
+        </a>
+        <p class="price">ksh 6000/=</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+      <div class="sale-item">
+        <a href="items/item6.html">
+          <img src="images/photo 10.jpg" alt="" >
+          <h4>grey sneakers</h4>
+        </a>
+        <p class="price">ksh 2999/=</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+    </div>
+    <button class="scroll-btn right"><i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+  <!--fourth grid-->
+  <div class="shop-number"><h3 style = "text-align: left; margin-left: 2em;">Shop four</h3></div>
+  <div class="scroll-wrapper">
+    <button class="scroll-btn left"><i class="fa-solid fa-arrow-left"></i></button>
+    <div class="sale-grid">
+      <div class="sale-item" style="margin-left: 30px;"><a href="items/item3.html"><img src="images/photo 7.jpg" alt=""  height="250px" width="200">
+                <h4>Canvas pro black & white</h4>
+                <p>Ksh 3999/=</p>
+            </a>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i> 
+            </div>
+            <div class="sale-item"><a href="items/item4.html"><img src="images/photo 8.jpg" alt=""  height="250px" width="200">
+                <h4>Jordan's size</h4></a>
+                <p >ksh 2000/=</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>  
+            </div>
+            <div class="sale-item">
+        <a href="items/item10.html">
+          <img src="images/jordan 1.jpg" alt="" >
+          <h4>Nike Airmax flux</h4>
+        </a>
+        <p class="price">ksh 4999/=</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half"></i>
+      </div>
+      <div class="sale-item">
+        <a href="items/item13.html">
+          <img src="images/photo 5.jpg" alt="" >
+          <h4>Vans Old skool stack form</h4>
+        </a>
+        <p class="price">ksh 6999/=</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half"></i>
+      </div>
+       <div class="sale-item" ">
+        <a href="items/item5.html">
+          <img src="images/photo 9.jpg" alt="" >
+          <h4>Addidas grey running shoe</h4>
+          <p class="price">ksh 6245/=</p>
+        </a>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half"></i>
+      </div>
+      <div class="sale-item"><a href="items/item1.html"><img src="images/photo 2.jpg" alt="" height="250px" width="200">
+                <h4>Pink designed sneakers</h4>
+                <p >Ksh 2000/=</p>
+            </a>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+            <div class="sale-item"><a href="items/item4.html"><img src="images/photo 8.jpg" alt=""  height="250px" width="200">
+                <h4>Jordan's size</h4></a>
+                <p >ksh 2000/=</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>  
+            </div>
+             <div class="sale-item">
+        <a href="items/item12.html">
+          <img src="images/cover 3.jpg" alt="" >
+          <h4>Nike air jordarn sneakers <br>limited edition</h4>
+        </a>
+        <p class="price">ksh 6000/=</p>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+    </div>
+    <button class="scroll-btn right"><i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+    </div>
+    <div class="About-section">
+        <div class="About-img"><img src="images/cover 2.jpg" alt="" ></div>
+        <div class="about-paragraph" style="margin-bottom: 5em;">
+            <h2 style="margin-bottom: 2px;">About Soleflex</h2>
+            <p>Step Into Style, Sprint Into Confidence. <br> Welcome to SoleRush – your ultimate destination for head-turning, sole-hugging, confidence-boosting shoes. Whether you're chasing dreams, making moves, or just stepping out in style, we've got the perfect pair to match your vibe.At SoleRush, we believe shoes aren’t just an accessory – they’re the foundation of your story. From iconic Jordans and sleek Vans to the latest street-savvy sneakers, our collection is crafted for the bold, the brave, and the trendsetters. <br> 👟 Why rush? Because good shoes take you good places. <br>🔥 Why SoleRush? Because you deserve a rush of style with every step. <br>Discover drops that speak your style. Walk the talk. Make every step unforgettable.</p>
+        </div>
+    </div>
+    <div class="testimonials">
+        <div class="testimonial">
+            <h3>What our clients say about us</h3>
+        <div class="wrapper2">
+        <div>
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"I just got my Jordans from SoleFlex—🔥🔥🔥! Super fast delivery, clean packaging, and the shoes? Even better than the pics. If you’re serious about your sneakers, this is the spot!" </p>
+            <img src="images/man2.jpg" alt="man2"  height="50px" width="50px">
+            <p>— Brian K., Nairobi</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Shopping on Soleflex was smoother than my fresh pair of Vans. Great prices, stylish kicks, and their customer service is actually human (big win!). Definitely telling all my friends." </p>
+            <img src="images/man3.jpg" alt="man3" height="50px" width="50px">
+            <p> — Linda W., Kisumu</p>
+        </div>
+        <div>
+             <i class="fa-solid fa-quote-left"></i>
+             <p>"Brooo… Soleflex has the heat! Got my Air Max within 48 hours and they even tossed in a free care kit. Respect for running a legit shoe game online!" </p>
+             <img src="images/woman1.jpg" alt="1woman" height="50px" width="50px">
+              <p> — Jay T., Mombasa</p>
+        </div>
+        </div>
+    </div>
+    </div>
+    <hr style="margin-top: 10em;">
+    <div class="footer">
+        <i class="fa-regular fa-copyright"></i>2025 Soleflex Stores. All Rights Reserved. Built by Derrick.G.Maina. <br>
+        TEL: 0798702143
+    </div>
+    <script src="script.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        loadCart();
+    });
+</script>
+     
+</body>
+</html>
